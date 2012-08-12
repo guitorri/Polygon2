@@ -31,6 +31,7 @@ if withNumPy:
         import numpy
         print "Using NumPy extension"
         mac.append(('WITH_NUMPY', 1))
+        numPyIncludePath=numpy.get_include()
     except:
         print "NumPy extension not found!"
 
